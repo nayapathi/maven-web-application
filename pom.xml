@@ -21,14 +21,12 @@
    </properties>
 
    <repositories>
-<--
             <repository>
             <id>nexus</id>
             <name>amazon remote repo</name>
-            <url>http://172.31.42.132:8081/repository/group-proxy/</url>
+            <url>http://35.154.99.5:8081/repository/amazon-group/</url>
         </repository>
--->   
-</repositories>
+   </repositories>
 
     <!-- Project dependencies -->
     <dependencies>
