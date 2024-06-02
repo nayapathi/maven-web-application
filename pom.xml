@@ -14,7 +14,7 @@
         <url>http://www.example.com</url>
     </organization>
     <properties>
-           <sonar.host.url>http://13.201.33.184:9000</sonar.host.url>
+           <sonar.host.url>http://172.31.43.169:9000</sonar.host.url>
            <!-- SonarQube authentication credentials -->
            <sonar.login>admin</sonar.login>
            <sonar.password>sonarqube</sonar.password>
@@ -24,7 +24,7 @@
         <repository>
             <id>nexus</id>
             <name>amazon remote repo</name>
-            <url>http://3.109.123.235:8081/repository/group-proxy/</url>
+            <url>http://172.31.42.132/repository/amazon-release/</url>
         </repository>
     </repositories>
 
@@ -65,12 +65,12 @@
     <repository>
       <id>nexus</id>
       <name>amazon release</name>
-      <url>http://65.0.204.143:8081/repository/amazon-release/</url>
+      <url>http://172.31.42.132:8081/repository/amazon-release/</url>
     </repository>
     <snapshotRepository>
         <id>nexus</id>
         <name>amazon snapshot</name>
-        <url>http://65.0.204.143:8081/repository/amazon-snapshot/</url>
+        <url>http://172.31.42.132:8081/repository/amazon-snapshot/</url>
     </snapshotRepository>
 </distributionManagement>
 
