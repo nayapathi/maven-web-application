@@ -24,7 +24,7 @@
         <repository>
             <id>nexus</id>
             <name>amazon remote repo</name>
-            <url>http://172.31.42.132/repository/amazon-release/</url>
+            <url>http://http://35.154.99.5:8081/repository/amazon-release//</url>
         </repository>
     </repositories>
 
