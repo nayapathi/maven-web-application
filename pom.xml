@@ -13,66 +13,59 @@
         <name>bhaskar</name>
         <url>http://www.example.com</url>
     </organization>
+    
     <properties>
-           <sonar.host.url>http://172.31.43.169:9000</sonar.host.url>
-           <!-- SonarQube authentication credentials -->
-           <sonar.login>admin</sonar.login>
-           <sonar.password>sonarqube</sonar.password>
-   </properties>
+        <sonar.host.url>http://172.31.43.169:9000</sonar.host.url>
+        <!-- SonarQube authentication credentials -->
+        <sonar.login>admin</sonar.login>
+        <sonar.password>sonarqube</sonar.password>
+    </properties>
 
-   <repositories>
-            <repository>
+    <repositories>
+        <repository>
             <id>nexus</id>
             <name>amazon remote repo</name>
-            <url>http:http://172.31.42.13:8081/repository/amazon-group/</url>
+            <url>http://172.31.42.13:8081/repository/amazon-group/</url>
         </repository>
-   </repositories>
+    </repositories>
 
     <!-- Project dependencies -->
     <dependencies>
         <!-- Servlet API for web applications -->
-                   <dependency>
-           <groupId>com.bhaskar</groupId>
-           <artifactId>cassandra</artifactId>
-           <version>2.1.1</version>
-                    </dependency>
+        <dependency>
+            <groupId>com.bhaskar</groupId>
+            <artifactId>cassandra</artifactId>
+            <version>2.1.1</version>
+        </dependency>
 
-
-
-            <dependency>
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
+        
         <!-- JUnit for testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-           <version>4.13.1</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
-        <!--
-        <dependency>
-        <groupId>com.bhaskar</groupId>
-        <artifactId>cassandra</artifactId>
-        <version>2.1.1</version>
-                </dependency>
-                -->
-
     </dependencies>
+    
     <distributionManagement>
-    <repository>
-      <id>nexus</id>
-      <name>amazon release</name>
-      <url>http://35.154.99.5:8081/repository/amazon-release/</url>
-    </repository>
-    <snapshotRepository>
-        <id>nexus</id>
-        <name>amazon snapshot</name>
-        <url>http://35.154.99.5:8081/repository/amazon-snapshot/</url>
-    </snapshotRepository>
-</distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>amazon release</name>
+            <url>http://35.154.99.5:8081/repository/amazon-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>amazon snapshot</name>
+            <url>http://35.154.99.5:8081/repository/amazon-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <!-- Maven build configuration -->
     <build>
@@ -100,4 +93,3 @@
         </plugins>
     </build>
 </project>
-
